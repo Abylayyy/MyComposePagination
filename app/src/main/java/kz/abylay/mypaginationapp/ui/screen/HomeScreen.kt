@@ -11,7 +11,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun MainScreen(viewModel: MainViewModel) {
+fun HomeScreen(viewModel: MainViewModel) {
     val state = viewModel.state
     LazyColumn(modifier = Modifier.fillMaxSize()) {
         items(state.items.size) {
