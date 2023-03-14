@@ -12,12 +12,16 @@ import kz.abylay.mypaginationapp.ui.screen.HelpScreen
 import kz.abylay.mypaginationapp.ui.screen.HomeScreen
 import kz.abylay.mypaginationapp.ui.screen.MainViewModel
 import kz.abylay.mypaginationapp.ui.screen.SettingsScreen
+import kz.abylay.mypaginationapp.ui.screen.counter.CounterScreen
 
 @Composable
 fun Navigation(navController: NavHostController, viewModel: MainViewModel) {
     NavHost(navController = navController, startDestination = ScreenRoute.HOME.query) {
         composable(ScreenRoute.HOME.query) {
             HomeScreen(viewModel = viewModel)
+        }
+        composable(ScreenRoute.COUNTER.query) {
+            CounterScreen()
         }
         composable(ScreenRoute.SETTINGS.query) {
             SettingsScreen()

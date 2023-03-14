@@ -6,6 +6,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material.Scaffold
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Settings
@@ -49,6 +50,12 @@ class MainActivity : ComponentActivity() {
                                     title = "Home",
                                     icon = Icons.Default.Home,
                                     contentDescription = "Go to home screen"
+                                ),
+                                MenuItem(
+                                    id = "counter",
+                                    title = "Counter",
+                                    icon = Icons.Default.Check,
+                                    contentDescription = "Go to counter screen"
                                 ),
                                 MenuItem(
                                     id = "settings",
